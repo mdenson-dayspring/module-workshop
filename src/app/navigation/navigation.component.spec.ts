@@ -1,6 +1,13 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavigationComponent } from './navigation.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { CoreModule } from '../core/core.module';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 describe('NavigationComponent', () => {
   let component: NavigationComponent;
@@ -8,7 +15,15 @@ describe('NavigationComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NavigationComponent ]
+      declarations: [ 
+        NavigationComponent 
+      ],
+      imports: [
+        BrowserModule,
+        CoreModule,
+        MatListModule,
+        MatSidenavModule
+      ]
     })
     .compileComponents();
   }));

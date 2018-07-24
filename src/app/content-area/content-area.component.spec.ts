@@ -1,6 +1,13 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ContentAreaComponent } from './content-area.component';
+import { NavigationComponent } from '../navigation/navigation.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { BrowserModule } from '@angular/platform-browser';
+import { CoreModule } from '../core/core.module';
+import { MatListModule } from '@angular/material/list';
 
 describe('ContentAreaComponent', () => {
   let component: ContentAreaComponent;
@@ -8,7 +15,17 @@ describe('ContentAreaComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ContentAreaComponent ]
+      declarations: [ 
+        ContentAreaComponent,
+        NavigationComponent 
+      ],
+      imports: [
+        BrowserModule,
+        CoreModule,
+        MatCardModule,
+        MatListModule,
+        MatSidenavModule,
+      ]
     })
     .compileComponents();
   }));
