@@ -6,8 +6,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserModule } from '@angular/platform-browser';
-import { CoreModule } from '../core/core.module';
+import { CoreModule } from '../../core/core.module';
 import { MatListModule } from '@angular/material/list';
+import { NavigationModule } from '../navigation/navigation.module';
 
 describe('ContentAreaComponent', () => {
   let component: ContentAreaComponent;
@@ -16,14 +17,13 @@ describe('ContentAreaComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ 
-        ContentAreaComponent,
-        NavigationComponent 
+        ContentAreaComponent
       ],
       imports: [
         BrowserModule,
         CoreModule,
+        NavigationModule,
         MatCardModule,
-        MatListModule,
         MatSidenavModule,
       ]
     })

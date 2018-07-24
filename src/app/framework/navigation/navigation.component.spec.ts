@@ -1,30 +1,32 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FooterComponent } from './footer.component';
+import { NavigationComponent } from './navigation.component';
 import { BrowserModule } from '@angular/platform-browser';
-import { CoreModule } from '../core/core.module';
-import { MatToolbarModule } from '@angular/material/toolbar';
+import { CoreModule } from '../../core/core.module';
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
-describe('FooterComponent', () => {
-  let component: FooterComponent;
-  let fixture: ComponentFixture<FooterComponent>;
+describe('NavigationComponent', () => {
+  let component: NavigationComponent;
+  let fixture: ComponentFixture<NavigationComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ 
-        FooterComponent 
+        NavigationComponent 
       ],
       imports: [
         BrowserModule,
         CoreModule,
-        MatToolbarModule
+        MatListModule,
+        MatSidenavModule
       ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FooterComponent);
+    fixture = TestBed.createComponent(NavigationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

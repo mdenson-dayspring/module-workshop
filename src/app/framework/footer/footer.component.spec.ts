@@ -1,28 +1,22 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderComponent } from './header.component';
+import { FooterComponent } from './footer.component';
 import { BrowserModule } from '@angular/platform-browser';
-import { CoreModule } from '../core/core.module';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
+import { CoreModule } from '../../core/core.module';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
-describe('HeaderComponent', () => {
-  let component: HeaderComponent;
-  let fixture: ComponentFixture<HeaderComponent>;
+describe('FooterComponent', () => {
+  let component: FooterComponent;
+  let fixture: ComponentFixture<FooterComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ 
-        HeaderComponent 
+        FooterComponent 
       ],
       imports: [
         BrowserModule,
         CoreModule,
-        MatButtonModule,
-        MatCardModule,
-        MatIconModule,
         MatToolbarModule
       ]
     })
@@ -30,7 +24,7 @@ describe('HeaderComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HeaderComponent);
+    fixture = TestBed.createComponent(FooterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
