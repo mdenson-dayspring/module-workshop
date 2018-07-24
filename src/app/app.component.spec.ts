@@ -1,36 +1,22 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { ContentAreaComponent } from './content-area/content-area.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { CoreModule } from './core/core.module';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatCardModule } from '@angular/material/card';
-import { NavigationComponent } from './navigation/navigation.component';
+import { HeaderModule } from './framework/header/header.module';
+import { FooterModule } from './framework/footer/footer.module';
+import { ContentAreaModule } from './framework/content-area/content-area.module';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent,
-        FooterComponent,
-        HeaderComponent,
-        ContentAreaComponent,
-        NavigationComponent
+        AppComponent
       ],
       imports: [
         BrowserModule,
         CoreModule,
-        MatButtonModule,
-        MatCardModule,
-        MatIconModule,
-        MatListModule,
-        MatSidenavModule,
-        MatToolbarModule
+        HeaderModule,
+        FooterModule,
+        ContentAreaModule
       ]
     }).compileComponents();
   }));
