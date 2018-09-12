@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { HeaderModule } from './framework/header/header.module';
 import { FooterModule } from './framework/footer/footer.module';
 import { ContentAreaModule } from './framework/content-area/content-area.module';
+import { CardListModule } from './card-list/card-list.module';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,10 @@ import { ContentAreaModule } from './framework/content-area/content-area.module'
     BrowserModule,
     HeaderModule,
     FooterModule,
-    ContentAreaModule
+    ContentAreaModule,
+    CardListModule,
+
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

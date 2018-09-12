@@ -7,13 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentAreaComponent implements OnInit {
 
-  cards = Array.from({length: 10}, (_, i) => {
-    return {
-      title: 'Content ' + (i + 1),
-      text: 'Lorem ipsum dolor sit amet, consectetur.'
-    }
-  });
-
   constructor() { }
 
   ngOnInit() {

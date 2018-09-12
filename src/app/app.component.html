@@ -1,3 +1,12 @@
-<app-header></app-header>
-<app-content-area></app-content-area>
-<app-footer></app-footer>
+<!-- <app-header></app-header>
+<app-content-area>
+  </app-card-list>
+</app-content-area>
+<app-footer></app-footer> -->
+
+<app-card-list>
+  <app-card *ngFor="let card of cards" class="simple">
+    <app-card-title>{{ card.title }}</app-card-title>
+    <app-card-content>{{ card.text }}</app-card-content>
+  </app-card>
+</app-card-list>

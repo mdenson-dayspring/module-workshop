@@ -1,14 +1,9 @@
 <mat-sidenav-container style="margin-top: 56px;">
   <mat-sidenav mode="side" opened>
-  
+
     <app-navigation></app-navigation>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-card *ngFor="let card of cards" class="simple">
-        <mat-card-title>{{ card.title }}</mat-card-title>
-        <mat-card-content>
-          <p>{{ card.text }}</p>
-        </mat-card-content>
-      </mat-card>
+    <ng-content></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>
