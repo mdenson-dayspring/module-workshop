@@ -11,8 +11,8 @@ describe('FooterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ 
-        FooterComponent 
+      declarations: [
+        FooterComponent
       ],
       imports: [
         BrowserModule,
@@ -20,7 +20,7 @@ describe('FooterComponent', () => {
         MatToolbarModule
       ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

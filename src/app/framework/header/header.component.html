@@ -1,6 +1,6 @@
-<mat-toolbar color="primary" class="toolbar">
-  <button mat-icon-button>
-    <mat-icon>menu</mat-icon>
+<mat-toolbar [color]="color" class="toolbar">
+  <button mat-icon-button (click)="onButtonClick()">
+    <mat-icon>{{ leftnav }}</mat-icon>
   </button>
-  <h1>My Application</h1>
+  <h1><ng-content></ng-content></h1>
 </mat-toolbar>

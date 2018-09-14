@@ -21,4 +21,8 @@ export class AppComponent {
   });
 
   title = 'app';
+
+  onClose() {
+    console.log('[AppComponent] onClose');
+  }
 }

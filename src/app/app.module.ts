@@ -7,6 +7,9 @@ import { FooterModule } from './framework/footer/footer.module';
 import { ContentAreaModule } from './framework/content-area/content-area.module';
 import { CardListModule } from './card-list/card-list.module';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { DialogLayoutModule } from './framework/dialog-layout/dialog-layout.module';
+import { FullLayoutModule } from './framework/full-layout/full-layout.module';
+import { NavMenuModule } from './nav-menu/nav-menu.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,13 @@ import { MatGridListModule } from '@angular/material/grid-list';
     ContentAreaModule,
     CardListModule,
 
-    MatGridListModule
+    MatGridListModule,
+
+    DialogLayoutModule,
+
+    FullLayoutModule,
+
+    NavMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

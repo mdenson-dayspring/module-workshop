@@ -1,7 +1,7 @@
 :host {
-    display: block;
-    padding: 1rem;
+  display: block;
 }
-.simple {
-    margin-bottom: 1rem;
+.content {
+  padding: 1rem;
+  min-height: calc(100vh - 112px - 2rem);
 }

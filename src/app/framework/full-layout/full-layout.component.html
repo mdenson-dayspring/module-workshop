@@ -1,0 +1,6 @@
+<app-header (mainButtonClick)="onMainButtonClick()">{{ title }}</app-header>
+<app-content-area class="content" [trigger]="clickCount">
+    <ng-content select="[appNav]" nav></ng-content>
+    <ng-content select="[appMainContent]" mainContent></ng-content>
+</app-content-area>
+<app-footer></app-footer>

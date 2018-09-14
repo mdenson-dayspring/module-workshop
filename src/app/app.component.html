@@ -1,12 +1,18 @@
-<!-- <app-header></app-header>
-<app-content-area>
+<app-full-layout title="My Application">
+  <app-nav-menu appNav></app-nav-menu>
+  <app-card-list appMainContent>
+    <app-card *ngFor="let card of cards" class="simple">
+      <app-card-title>{{ card.title }}</app-card-title>
+      <app-card-content>{{ card.text }}</app-card-content>
+    </app-card>
   </app-card-list>
-</app-content-area>
-<app-footer></app-footer> -->
+</app-full-layout>
 
-<app-card-list>
-  <app-card *ngFor="let card of cards" class="simple">
-    <app-card-title>{{ card.title }}</app-card-title>
-    <app-card-content>{{ card.text }}</app-card-content>
-  </app-card>
-</app-card-list>
+<!-- <app-dialog-layout title="Edit Profile" (close)="onClose()">
+  <app-card-list appMainContent>
+    <app-card *ngFor="let card of cards" class="simple">
+      <app-card-title>{{ card.title }}</app-card-title>
+      <app-card-content>{{ card.text }}</app-card-content>
+    </app-card>
+  </app-card-list>
+</app-dialog-layout> -->
